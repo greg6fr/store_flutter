@@ -1,14 +1,15 @@
 class Product {
-  // constructeur
-
+  /*
+    {} : paramètre nommé
+    this : paramètre promu
+    required : paramètre obligatoire
+  */
   int id;
-  String title;
-  double price;
-  String description;
-  String category;
-  String image;
+  String title, description, category, image;
+  num price;
   Map rating;
 
+  // constructeur
   Product({
     required this.id,
     required this.title,

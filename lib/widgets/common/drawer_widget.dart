@@ -22,8 +22,7 @@ class DrawerWidget extends StatelessWidget {
               ],
             ),
             Text('Drawer'),
-           
-            ],
+          ],
         ),
       ),
     );

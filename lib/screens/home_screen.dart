@@ -10,11 +10,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     /*
-      Scaffold : une fenêtre avec une barre de navigation et un corps
-        body : le contenu
-        AppBar : une barre d'en-tête
-        Drawer : menu coulissant 
-        floatingButton : un bouton flottant
+      Scaffold permet d'architecturer l'application
+        body : définir le contenu principal de l'écran
+        AppBar : barre de navigation
+        Drawer : menu coulissant
+        FloatingButton : bouton flottant…
     */
     return Scaffold(
       appBar: const AppbarWidget(),
@@ -23,8 +23,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             AdsWidget(),
-            const ProductsGridWidget()
-           
+            ProductsGridWidget(),
           ],
         ),
       ),
