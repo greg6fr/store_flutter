@@ -2,12 +2,12 @@
 
 A new Flutter project.
 
-# Equipe
-<ul>
-<li>Borel Kamsu</li> <br>
-<li>Elhadj Oumar TALL</li> <br>
-<li>Jules Gregoire</li> <br>
+# Groupe
+
+- Sitraka RAHELIARISOA
+
 </ul>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
@@ -20,6 +20,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
 # store_flutter
 
 <!-- fakestoreapi.com  pour les api fictive -->
