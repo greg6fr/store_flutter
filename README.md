@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+# Equipe
+<ul>
+<li>Borel Kamsu</li> <br>
+<li>Elhadj Oumar TALL</li> <br>
+<li>Jules Gregoire</li> <br>
+</ul>
 ## Getting Started
 
 This project is a starting point for a Flutter application.
