@@ -30,7 +30,9 @@ class ProductsService {
                 description: value['description'],
                 category: value['category'],
                 image: value['image'],
-                rating: value['rating']),
+                rating: value['rating'],
+                ),
+
           )
           .toList();
     }

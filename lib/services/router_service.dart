@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 import 'package:store/screens/cart_details_screen.dart';
 import 'package:store/screens/home_screen.dart';
 import 'package:store/screens/product_details_screen.dart';
+import 'package:store/screens/product_screen.dart';
 
 class RouterService {
   // lister les routes
@@ -53,10 +54,15 @@ class CartDetailsWidget extends StatelessWidget {
           name: 'product-details',
           builder: (context, state) => const ProductDetailsScreen(),
         ),
-         GoRoute(
+        GoRoute(
           path: '/cart',
           name: 'cart',
           builder: (context, state) => const CartDetailsScreen(),
+        ),
+        GoRoute(
+          path: '/products',
+          name: 'products',
+          builder: (context, state) => const ProductsScreen(),
         ),
       ],
     );

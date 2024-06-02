@@ -18,5 +18,7 @@ class Product {
     required this.category,
     required this.image,
     required this.rating,
+
+    
   });
 }
