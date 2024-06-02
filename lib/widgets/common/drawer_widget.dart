@@ -8,6 +8,15 @@ import 'package:store/providers/category_provider.dart';
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({super.key});
 
+  // Map des catégories et des icônes
+  static const Map<String, IconData> categoryIcons = {
+    'electronics': Icons.electrical_services,
+    'jewelery': Icons.watch,
+    'men\'s clothing': Icons.male,
+    'women\'s clothing': Icons.female,
+    // Ajoutez d'autres catégories et icônes ici
+  };
+
   Future<List<String>> fetchCategories() async {
     final response = await http.get(Uri.parse('https://fakestoreapi.com/products/categories'));
     if (response.statusCode == 200) {
@@ -56,12 +65,14 @@ class DrawerWidget extends StatelessWidget {
                     return ListView.builder(
                       itemCount: categories.length,
                       itemBuilder: (context, index) {
+                        final category = categories[index];
+                        final icon = categoryIcons[category] ?? Icons.category; // Icône par défaut
                         return ListTile(
-                          leading: const Icon(Icons.category),
-                          title: Text(categories[index]),
+                          leading: Icon(icon),
+                          title: Text(category),
                           onTap: () {
                             final categoryProvider = Provider.of<CategoryProvider>(context, listen: false);
-                            categoryProvider.setCategory(categories[index]);
+                            categoryProvider.setCategory(category);
                             Navigator.pop(context); // Close the drawer
                             context.pushNamed('products'); // Navigate to products screen
                           },
