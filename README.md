@@ -2,13 +2,17 @@
 
 A new Flutter project.
 
-# Groupe
+# Dev
 
-- Sitraka RAHELIARISOA
+- Jules GREGOIRE
 
 </ul>
 
 ## Getting Started
+
+Install all dependencies
+
+- flutter pub get
 
 This project is a starting point for a Flutter application.
 
